@@ -1,0 +1,106 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #333333;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* Size / Positioning / General Style */
+.container {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.4rem;
+    row-gap: 1rem;
+}
+
+.calculatorStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 26rem;
+    width: 15rem;
+    border-radius: 30px;
+
+}
+
+.zero {
+    grid-column-start: -5;
+    grid-column-end: -3;
+    width: 6.5rem;
+    border-radius: 1.5625rem;
+}
+
+.delete {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 1.5625rem;
+    width: 6.5rem; 
+}
+
+.display {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 14rem;
+    border-radius: 1.5625rem;
+    border: 0.06rem solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+}
+/* Buttons style */
+button {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+}
+
+.divide {
+    font-size: 1.3rem;
+}
+
+.operator {
+    background-color: #f1a43c;
+    color: white;
+}
+
+.operator:hover {
+    background-color: white;
+    color: #f1a43c;
+}
+
+.number {
+    background-color: #333333;
+    color: white;
+}
+
+.number:hover {
+    background-color: #737373;
+}
+
+.button {
+    background-color: #a5a5a5;
+}
+
+.button:hover {
+    background-color: #d9d9d9;
+}

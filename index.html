@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=REM:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculatorStyle">
+        <div class="calculator">
+          <input type="text" class="display" value="" readonly />
+          <button class="delete button" onclick="deleteDisplay()">C</button>
+          <button class="percent button" onclick="percent()">%</button>
+          <button class="divide operator" onclick="insertOperator('/')">÷</button>
+          <button class="seven number" onclick="insertNumber('7')">7</button>
+          <button class="eight number" onclick="insertNumber('8')">8</button>
+          <button class="nine number" onclick="insertNumber('9')">9</button>
+          <button class="multiply operator" onclick="insertOperator('*')">x</button>
+          <button class="four number" onclick="insertNumber('4')">4</button>
+          <button class="five number" onclick="insertNumber('5')">5</button>
+          <button class="six number" onclick="insertNumber('6')">6</button>
+          <button class="minus operator" onclick="insertOperator('-')">-</button>
+          <button class="one number" onclick="insertNumber('1')">1</button>
+          <button class="two number" onclick="insertNumber('2')">2</button>
+          <button class="three number" onclick="insertNumber('3')">3</button>
+          <button class="plus operator" onclick="insertOperator('+')">+</button>
+          <button class="zero number" onclick="insertNumber('0')">0</button>
+          <button class="dot number" onclick="insertNumber('.')">.</button>
+          <button class="equal operator" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+    <footer>Apple Calculator Design</footer>
+    <script src="./index.js" charset="UTF-8"></script>
+  </body>
+</html>
